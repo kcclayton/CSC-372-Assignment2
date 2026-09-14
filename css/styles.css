@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PAGE LAYOUT STYLING */
+.page-layout {
+
+  padding: 0;
+  margin: 0;
+
+  grid-template-areas:
+    "navbar"
+    "page-content"
+    "footer";
+
+}
+
+/* HEADER STYLING */
+header {
+
+  grid-area: navbar;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+nav {
+
+  /* Box Model + Dimensions */
+  padding: 15px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px #00000054;
+
+  /* Colors + Backgrounds */
+  background-color: #d6c390;
+
+}
+
+.nav-logo img {
+
+  width: 200px;
+  /* placeholder value */
+
+}
+
+/* nav-logo hover? */
+
+.nav-links {
+
+  /* Box Model + Dimensions */
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 0 0 auto;
+  padding: 5px;
+  justify-content: center;
+
+  /* Typography + Text Styling*/
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  /* Typography + Text Styling */
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: large;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  animation: filter 0.7s ease;
+
+}
+
+.nav-links a:hover {
+
+  filter: brightness(0.8);
+
+}
+
+/* MAIN CONTENT STYLING */
+main {
+
+  display: grid;
+  grid-area: page-content;
+  grid-template-areas:
+    "hero-section"
+    "upcoming-events"
+    "about-section";
+
+}
+
+.grid-item {
+
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* HERO SECTION STYLING */
+.hero-section {
+
+  padding: 0;
+  margin: 30px 60px 15px;
+
+  display: grid;
+  grid-area: hero-section;
+  grid-template-areas:
+    "hero-img hero-text";
+
+  grid-template-columns: repeat(10, 1fr);
+
+}
+
+.hero-section .hero-img {
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  grid-area: hero-img;
+  border: 3px solid magenta;
+  grid-column: span 5;
+
+}
+
+.hero-section .hero-text-wrapper {
+
+  grid-area: hero-text;
+  display: block;
+  grid-column: span auto;
+
+}
+
+
+/* UPCOMING EVENTS STYLING */
+.upcoming-events {
+
+  display: grid;
+  grid-area: upcoming-events;
+
+}
+
+/* ABOUT SECTION STYLING */
+.about-section {
+
+  display: grid;
+  grid-area: about-section;
+
+}
+
+/* FOOTER STYLING */
+footer {
+
+  grid-area: footer;
+  display: flex;
+
+}
