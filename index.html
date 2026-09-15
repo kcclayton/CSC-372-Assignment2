@@ -8,35 +8,31 @@
 
     <title>Home | Superior University</title>
 
-    <link rel="icon" type="image/png" href="#">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-<body>
+<body class="page-layout">
 
     <header>
 
-        <nav class="navbar">
+        <nav>
 
             <div class="nav-logo">
-                <a href="#" aria-label="Go to home page">
+                <a href="index.html" aria-label="Go to home page">
 
-                    <img src="" alt="Site logo">
+                    <img src="images/logo.png" alt="Site logo">
 
                 </a>
             </div>
 
-            <div class="nav-links">
-
-                <ul>
-                    <li><a href="#hero-section">Home</a></li>
-                    <li><a href="#upcoming-events">Upcoming Events</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="event.html">Featured Event</a></li>
-                </ul>
-
-            </div>
+            <ul class="header-nav nav-links">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="event.html">Featured Event</a></li>
+            </ul>
 
         </nav>
 
@@ -46,9 +42,9 @@
 
         <section class="hero-section">
 
-            <figure class="hero-img">
+            <figure class="grid-item hero-img-wrapper">
 
-                <img src="" alt="Description of image">
+                <img src="images/senate.webp" alt="Description of image">
 
             </figure>
 
@@ -78,140 +74,136 @@
 
         <section class="upcoming-events">
 
-            <div id="events-grid-container">
+            <!-- FORENSIC ENTOMOLOGY EVENT -->
+            <article id="featured-event" class="event-card-wrapper grid-item">
 
-                <!-- FORENSIC ENTOMOLOGY EVENT -->
-                <article id="featured-event" class="grid-item event-card">
+                <div class="event-card">
 
-                    <div class="event-card-content">
+                    <figure>
 
-                        <figure>
+                        <img src="images/fly.jpg" alt="Close up image of a fly">
 
-                            <img src="images/fly.jpg" alt="Close up image of a fly">
+                    </figure>
 
-                        </figure>
 
+                    <div class="event-text">
                         <h2><a href="event.html" id="header-link">Lady of the Flies: The Importance of Forensic
                                 Entomology with Dr. Melinda Thomas</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Libero, officia aliquid. Ea delectus harum provident?
                             Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
-
+                            <a href="event.html" class="read-links">Read more...</a>
                         </p>
-                        <a href="event.html" class="button details-btn">View Details</a>
-
                     </div>
 
-                </article>
+                </div>
 
-                <!-- ORCHESTRAL PERFORMANCE EVENT -->
-                <article class="grid-item event-card">
+            </article>
 
-                    <div class="event-card-content">
+            <!-- ORCHESTRAL PERFORMANCE EVENT -->
+            <article class="grid-item event-card-wrapper unfeatured-event">
 
-                        <figure>
+                <div class="event-card">
 
-                            <img src="images/orchestra.jpg" alt="A woman conducting a symphonic orchestra">
+                    <figure>
 
-                        </figure>
+                        <img src="images/orchestra.jpg" alt="A woman conducting a symphonic orchestra">
 
+                    </figure>
+
+                    <div class="event-text">
                         <h2><a href="#">Orchestral Performance</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Libero, officia aliquid. Ea delectus harum provident?
-                            Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
+                            <a href="#" class="read-links">Read more...</a>
                         </p>
-                        <a href="#" class="button details-btn">View Details</a>
-
                     </div>
+                </div>
 
-                </article>
+            </article>
 
-                <!-- BASKETBALL GAME EVENT -->
-                <article class="grid-item event-card">
+            <!-- BASKETBALL GAME EVENT -->
+            <article class="grid-item event-card-wrapper unfeatured-event">
 
-                    <div class="event-card-content">
+                <div class="event-card">
 
-                        <figure>
+                    <figure>
 
-                            <img src="images/basketball.jpeg"
-                                alt="Two basketball players on opposing teams, the Sentinels player with the ball">
+                        <img src="images/basketball.jpeg"
+                            alt="Two basketball players on opposing teams, the Sentinels player with the ball">
 
-                        </figure>
+                    </figure>
 
+                    <div class="event-text">
                         <h2><a href="#">Barton State Bears at SupU Sentinels</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Libero, officia aliquid. Ea delectus harum provident?
-                            Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
+                            <a href="#" class="read-links">Read more...</a>
                         </p>
-                        <a href="#" class="button details-btn">View Details</a>
-
                     </div>
+                </div>
 
-                </article>
+            </article>
 
-                <!-- GROUP HIKE EVENT -->
-                <article class="grid-item event-card">
+            <!-- GROUP HIKE EVENT -->
+            <article class="grid-item event-card-wrapper unfeatured-event">
 
-                    <div class="event-card-content">
+                <div class="event-card">
 
-                        <figure>
+                    <figure>
 
-                            <img src="images/hike.jpg" alt="A landscape of a forest around a lake in autumn">
+                        <img src="images/hike.jpg" alt="A landscape of a forest around a lake in autumn">
 
-                        </figure>
+                    </figure>
 
+                    <div class="event-text">
                         <h2><a href="#">Lake Insignificant Nature Appreciation Hike</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Libero, officia aliquid. Ea delectus harum provident?
-                            Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
+                            <a href="#" class="read-links">Read more...</a>
                         </p>
-                        <a href="#" class="button details-btn">View Details</a>
-
                     </div>
 
-                </article>
+                </div>
 
-                <!-- STUDENT SENATE MEETING EVENT -->
-                <article class="grid-item event-card">
+            </article>
 
-                    <div class="event-card-content">
+            <!-- STUDENT SENATE MEETING EVENT -->
+            <article class="grid-item event-card-wrapper unfeatured-event">
 
-                        <figure>
+                <div class="event-card">
 
-                            <img src="images/senate.webp" alt="Students sitting around a table talking together">
+                    <figure>
 
-                        </figure>
+                        <img src="images/senate.webp" alt="Students sitting around a table talking together">
 
+                    </figure>
+
+                    <div class="event-text">
                         <h2><a href="#">Student Senate Meeting</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Libero, officia aliquid. Ea delectus harum provident?
-                            Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
-                            <a class="read-links">Continue reading</a>
+                            <a href="#" class="read-links">Read more...</a>
                         </p>
-
-                        <a href="#" class="button details-btn">View Details</a>
-
                     </div>
 
-                </article>
+                </div>
+
+            </article>
 
             </div>
 
         </section>
 
-        <section class="about-section">
+        <section class="about-section-wrapper">
 
-            <div class="about-grid-container">
+            <div class="about-section">
 
-                <div class="benefits-grid-container">
+                <div class="benefits-grid-container grid-item">
 
                     <!-- BENEFIT 1 -->
-                    <div class="grid-item benefit-card">
+                    <div class="benefit-card grid-item">
 
                         <h3>Benefit 1</h3>
                         <p>
@@ -222,7 +214,7 @@
                     </div>
 
                     <!-- BENEFIT 2 -->
-                    <div class="grid-item benefit-card">
+                    <div class="benefit-card grid-item ">
 
                         <h3>Benefit 2</h3>
                         <p>
@@ -233,7 +225,7 @@
                     </div>
 
                     <!-- BENEFIT 3 -->
-                    <div class="grid-item benefit-card">
+                    <div class="benefit-card grid-item ">
 
                         <h3>Benefit 3</h3>
                         <p>
@@ -245,7 +237,7 @@
 
                 </div>
 
-                <article class="grid-item about-card">
+                <article class="about-card grid-item">
 
                     <h2>About Superior University</h2>
 
@@ -267,13 +259,17 @@
 
         <div class="footer-grid-container">
 
-            <div class="grid-item contacts-card">
+            <div class="contacts-card-wrapper">
 
-                <p><span>Name: </span>Jane Doe</p>
-                <p><span>Email: </span>example@email.com</p>
-                <p><span>Phone: </span>555.444.3333</p>
-                <p><span>Fax:</span>555.666.7777</p>
+                <div class="grid-item contacts-card">
 
+                    <p><span>Name: </span>Jane Doe</p>
+                    <p><span>Email: </span>example@email.com</p>
+                    <p><span>Phone: </span>555.444.3333</p>
+                    <p><span>Fax:</span>555.666.7777</p>
+
+                </div>
+                
             </div>
 
             <div class="grid-item copyright-card">
@@ -282,18 +278,14 @@
 
             </div>
 
-            <div class="grid-item footer-nav">
+            <div class="grid-item navbar-card">
 
-                <div class="nav-links">
-
-                    <ul>
-                        <li><a href="#hero-section">Back to Top</a></li>
-                        <li><a href="#upcoming-events">Upcoming Events</a></li>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="event.html">Featured Event</a></li>
-                    </ul>
-
-                </div>
+                <ul class="footer-nav nav-links">
+                    <li><a href="#hero-section">Back to Top</a></li>
+                    <li><a href="#upcoming-events">Upcoming Events</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="event.html">Featured Event</a></li>
+                </ul>
 
             </div>
 
