@@ -10,6 +10,7 @@ The university’s Office of Student Engagement needs a small website that helps
 - [ ] A GitHub repository with at least five meaningful commits
 
 ### Project Structure
+```
 Assignment-2/
 ├── index.html
 ├── event.html
@@ -20,6 +21,7 @@ Assignment-2/
 │    ├── event-2.jpeg
 │    ├── event-3.jpeg
 └── README.md
+```
 
 ### Page 1: Home Page (`index.html`)
 - [ ] Site header and navigation
