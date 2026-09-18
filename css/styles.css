@@ -408,6 +408,12 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 700px) {
 
+  #event-page {
+
+    grid-template-columns: 1fr;
+
+  }
+
   .upcoming-events {
 
     width: calc(100% - 30px);
@@ -434,13 +440,12 @@ footer {
   .event-details {
 
     grid-column: 1 / -1;
-    grid-row: auto;
+    grid-row: 2;
     margin: 30px 15px;
 
   }
 
-  .event-content-wrapper,
-  .event-aside-wrapper {
+  .event-content-wrapper {
 
     grid-column: auto;
     grid-row: auto;
@@ -449,7 +454,16 @@ footer {
 
   .event-aside-wrapper {
 
+    grid-column: 1;
+    grid-row: 3;
     margin: 0 15px;
+
+  }
+
+  .related-events-section {
+
+    grid-column: 1;
+    grid-row: 4;
 
   }
 
