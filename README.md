@@ -29,8 +29,6 @@ This responsive Campus Event Guide helps UNCG students discover campus activitie
 
 ## Sources
 
-## Sources
-
 - Content and design references:
     - UNCG, "University of North Carolina at Greensboro," https://www.uncg.edu.
     - UNCG News, “What's New at the G,” https://www.uncg.edu/news/whats-new-at-the-g-2026/.
