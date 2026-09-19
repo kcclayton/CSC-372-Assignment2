@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home | Superior University</title>
+    <title>Lady of the Flies | University of North Carolina at Greensboro</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -22,15 +22,15 @@
             <div class="nav-logo">
                 <a href="index.html" aria-label="Go to home page">
 
-                    <img src="images/logo.png" alt="Site logo">
+                    <img src="images/logo.svg" alt="Site logo">
 
                 </a>
             </div>
 
             <ul class="header-nav nav-links">
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#upcoming-events">Upcoming Events</a></li>
-                <li><a href="#about-section">About</a></li>
+                <li><a href="index.html#hero-section">Home</a></li>
+                <li><a href="index.html#upcoming-events">Upcoming Events</a></li>
+                <li><a href="index.html#about-section">About</a></li>
                 <li><a href="event.html">Featured Event</a></li>
             </ul>
 
@@ -41,94 +41,212 @@
     <main id="event-page">
 
         <!-- EVENT INTRO SECTION -->
-        <section class="event-intro">
-            <h1>Event Name</h1>
-            <figure>
-                <img src="images/fly.jpg">
-            </figure>
-            <p>Event Category</p>
-            <time datetime="2026-09-15T15:30">September 15, 2026</time>
-            <p>Event Location</p>
-            <p id="this-paragraph">
-                Event discription: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Debitis esse assumenda, modi nihil quidem quasi? Asperiores aliquid, veniam vero eveniet est amet
-                maxime!
-                Pariatur maiores architecto molestias velit nostrum unde.
-            </p>
+        <section id="event-intro">
+
+            <div id="event-intro-wrapper">
+
+                <h1>Lady of the Flies: The Importance of Forensic Entomology with Dr. Melinda Thomas</h1>
+                <figure>
+                    <img src="images/fly.jpg" alt="Close-up image of a fly used to illustrate forensic entomology">
+                </figure>
+                <p>Scientific Talks</p>
+                <time datetime="2026-09-15T15:30">September 15, 2026</time>
+                <p>Sullivan Science 101</p>
+                <p id="event-description">
+                    Discover how insects provide valuable evidence in criminal investigations at this symposium on the
+                    science and practice of forensic entomology.
+                </p>
+
+            </div>
+
         </section>
 
         <!-- EVENT ASIDE -->
-        <div class="event-aside-wrapper wrapper">
+        <div id="event-aside-wrapper" class="wrapper">
 
-            <aside class="event-aside grid-item">
+            <aside id="event-aside" class="grid-item">
 
-                <p> date, time, location, organizer, admit info</p>
-                <a class="btn">Registration Link</a>
+                <!-- EVENT REGISTRATION SECTION -->
+                <section id="event-registration">
+
+                    <div id="event-registration-content">
+
+                        <time datetime="2026-09-15T09:00">September 15th at 9am</time>
+                        <p> Sullivan Science Building</p>
+                        <p>Contact: Talia Fowler</p>
+                        <p>Student ID Required</p>
+
+                    </div>
+
+                    <a class="btn">Registration Link</a>
+
+                </section>
+
+                <!-- RELATED EVENTS SECTION -->
+                <section id="related-events-section">
+
+                    <!-- ORCHESTRAL PERFORMANCE EVENT -->
+                    <article class="grid-item event-card-wrapper unfeatured-event">
+
+                        <div class="event-card">
+
+                            <figure>
+
+                                <img src="images/orchestra.jpg" alt="A man conducting a symphonic orchestra">
+
+                            </figure>
+
+                            <div class="event-text">
+                                <h2><a href="#">Orchestral Performance</a></h2>
+                                <p>
+                                    Experience the power and beauty of live music at an upcoming orchestral performance
+                                    featuring an unforgettable evening of symphonic artistry.
+                                    <a href="#" class="read-links">Read more...</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- BASKETBALL GAME EVENT -->
+                    <article class="grid-item event-card-wrapper unfeatured-event">
+
+                        <div class="event-card">
+
+                            <figure>
+
+                                <img src="images/basketball.jpg"
+                                    alt="A female UNCG basketball player in action">
+
+                            </figure>
+
+                            <div class="event-text">
+                                <h2><a href="#">Carolina Tar Heels at UNCG Spartans</a></h2>
+                                <p>
+                                    Get ready for an exciting matchup as the Tar Heels face the Spartans in an NCAA game
+                                    you will not want to miss.
+                                    <a href="#" class="read-links">Read more...</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- GROUP HIKE EVENT -->
+                    <article class="grid-item event-card-wrapper unfeatured-event">
+
+                        <div class="event-card">
+
+                            <figure>
+
+                                <img src="images/hike.jpg" alt="A waterfall running under a wooden bridge surrounded by nature">
+
+                            </figure>
+
+                            <div class="event-text">
+                                <h2><a href="#">Lakeside Nature Appreciation Hike</a></h2>
+                                <p>
+                                    Step into the season with us on a scenic group hike filled with fresh air, shared
+                                    adventure, and unforgettable views.
+                                    <a href="#" class="read-links">Read more...</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- STUDENT SENATE MEETING EVENT -->
+                    <article class="grid-item event-card-wrapper unfeatured-event">
+
+                        <div class="event-card">
+
+                            <figure>
+
+                                <img src="images/senate.jpg" alt="Two young female students wearing UNCG shirts smiling together">
+
+                            </figure>
+
+                            <div class="event-text">
+                                <h2><a href="#">Weekly Student Senate Meeting</a></h2>
+                                <p>
+                                    Stay informed and engaged as the Student Senate discusses key topics shaping campus
+                                    life at its upcoming weekly meeting.
+                                    <a href="#" class="read-links">Read more...</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
 
             </aside>
 
         </div>
 
         <!-- EVENT DETAILS SECTION -->
-        <section class="event-details">
+        <section id="event-details">
 
             <!-- EVENT CONTENT -->
-            <div class="event-content-wrapper wrapper">
+            <div id="event-content-wrapper" class="wrapper">
 
-                <article class="event-content grid-item">
+                <article id="event-content" class="grid-item">
 
                     <!-- EVENT DESCRIPTION SECTION -->
-                    <section class="event-description">
+                    <section id="event-description">
 
                         <h2>Event Description</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Placeat quisquam omnis molestias ea dolorum debitis, quis porro perspiciatis facilis, unde,
-                            dolor pariatur magni quasi ipsam quae consequatur commodi totam alias?
+                            What can insects reveal about crime?
+                            Explore the facinating world of forensic entomology, where science and investigation meet,
+                            with one of our university's leading entomological experts.
                         </p>
 
                     </section>
 
                     <!-- WHAT TO EXPECT SECTION -->
-                    <section class="expectations-section">
+                    <section id="expectations-section">
 
                         <h2>What to Expect</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Aspernatur perferendis commodi facere, dignissimos sed, voluptate doloribus dolor aliquam
-                            hic sint odio, incidunt quos porro veritatis eius id quod ullam officiis!
+                            Attendees can expect an engaging introduction to forensic entomology and its role in
+                            criminal investigations.
+                            The symposium will explore how insects help investigators estimate time since death,
+                            interpret environmental clues, and collect evidence, with insights from experts who connect
+                            biology, law enforcement, and the pursuit of justice.
                         </p>
 
                     </section>
 
                     <!-- EVENT SCHEDULE SECTION -->
-                    <section class="event-schedule">
+                    <section id="event-schedule">
 
                         <h2>Event Schedule</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Totam hic facere facilis labore quae!
-                            Cum nisi recusandae qui odio saepe, tempore mollitia quae nemo tempora enim similique
-                            voluptatibus ullam totam.
+                            Lectures will be open to all students from 9am to 3pm with a break for lunch around 2pm.
                         </p>
 
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                        </ul>
+                        <ol>
+                            <li>Melinda Thomas, PhD | Introduction </li>
+                            <li>Finnian Copeland, PhD | Bioaccumulation in Maggots</li>
+                            <li>Gilbert Hunt, PhD | Advances in Entomotoxicology</li>
+                        </ol>
 
                     </section>
 
                     <!-- ACCESSIBILITY INFO -->
-                    <section class="event-accessibility">
+                    <section id="event-accessibility">
 
                         <h2>Accessibility Info</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Nam, praesentium alias molestias quos temporibus totam quidem veritatis voluptatibus
-                            dolorem, repellat unde est iure a.
-                            Voluptatem vel non quaerat temporibus laboriosam?
+                            Sullivance Science Lecture Hall 101 is designed to support an accessible and welcoming
+                            experience for all attendees, with step-free entry, accessible seating, and clear pathways
+                            throughout the space.
+                            Attendees who need accommodations, assistive listening support, or other accessibility
+                            services are encouraged to contact the event organizers in advance so arrangements can be
+                            made.
                         </p>
 
                     </section>
@@ -136,102 +254,6 @@
                 </article>
 
             </div>
-
-        </section>
-
-        <!-- RELATED EVENTS SECTION -->
-        <section class="related-events-section">
-
-            <!-- ORCHESTRAL PERFORMANCE EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/orchestra.jpg" alt="A woman conducting a symphonic orchestra">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Orchestral Performance</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-                </div>
-
-            </article>
-
-            <!-- BASKETBALL GAME EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/basketball.jpeg"
-                            alt="Two basketball players on opposing teams, the Sentinels player with the ball">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Barton State Bears at SupU Sentinels</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-                </div>
-
-            </article>
-
-            <!-- GROUP HIKE EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/hike.jpg" alt="A landscape of a forest around a lake in autumn">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Lake Insignificant Nature Appreciation Hike</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- STUDENT SENATE MEETING EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/senate.webp" alt="Students sitting around a table talking together">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Student Senate Meeting</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-
-                </div>
-
-            </article>
 
         </section>
 
@@ -248,7 +270,7 @@
                     <p><span>Name: </span>Jane Doe</p>
                     <p><span>Email: </span>example@email.com</p>
                     <p><span>Phone: </span>555.444.3333</p>
-                    <p><span>Fax:</span>555.666.7777</p>
+                    <p><span>Fax: </span>555.666.7777</p>
 
                 </div>
 
@@ -256,16 +278,16 @@
 
             <div class="grid-item copyright-card">
 
-                &copy;Superior University 2026
+                &copy; UNCG 2026
 
             </div>
 
             <div class="grid-item navbar-card">
 
                 <ul class="footer-nav nav-links">
-                    <li><a href="#hero-section">Back to Top</a></li>
-                    <li><a href="#upcoming-events">Upcoming Events</a></li>
-                    <li><a href="#about-section">About</a></li>
+                    <li><a href="index.html">Back to Top</a></li>
+                    <li><a href="index.html#upcoming-events">Upcoming Events</a></li>
+                    <li><a href="index.html#about-section">About</a></li>
                     <li><a href="event.html">Featured Event</a></li>
                 </ul>
 

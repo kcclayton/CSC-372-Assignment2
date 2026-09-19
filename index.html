@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home | Superior University</title>
+    <title>Home | University of North Carolina at Greensboro</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -22,7 +22,7 @@
             <div class="nav-logo">
                 <a href="index.html" aria-label="Go to home page">
 
-                    <img src="images/logo.png" alt="Site logo">
+                    <img src="images/logo.svg" alt="Site logo">
 
                 </a>
             </div>
@@ -40,31 +40,44 @@
 
     <main>
 
-        <section class="hero-section">
+        <section id="hero-section">
 
-            <figure class="grid-item hero-img-wrapper">
+            <div id="hero-content">
 
-                <img src="images/senate.webp" alt="Description of image">
+                <div id="hero-text-wrapper">
 
-            </figure>
+                    <div id="hero-text">
 
-            <div class="hero-text-wrapper">
-
-                <div class="hero-text">
-
-                    <h1>This is some cool text</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Vero possimus laudantium reprehenderit laborum a illo consequuntur!
-                        Quibusdam tenetur vitae nobis, veniam omnis aut dolores voluptates, aperiam asperiores
-                        voluptatem quasi laborum!
-                    </p>
-
-                    <div class="button hero-link">
-
-                        <a href="#upcoming-events"></a>
+                        <h1><a href="https://www.uncg.edu/news/whats-new-at-the-g-2026/">What's new at the G</a></h1>
+                        <p>
+                            New programs, campus perks, food menus, and creative spaces greet Spartans as they begin
+                            their 2026-27 academic year at UNCG.
+                        </p>
 
                     </div>
+
+                    <ul id="hero-nav-wrapper" class="nav-links">
+
+                        <li>
+                            <a class="btn" href="event.html">
+                                Featured
+                            </a>
+                            Dr. Thomas Symposium
+                        </li>
+                        <li>
+                            <a class="btn" href="#upcoming-events">
+                                Upcoming Events
+                            </a>
+                            Plan Your Semester
+                        </li>
+                        <li>
+                            <a class="btn" href="#about-section">
+                                About the G
+                            </a>
+                            Learn more
+                        </li>
+
+                    </ul>
 
                 </div>
 
@@ -72,179 +85,193 @@
 
         </section>
 
-        <section class="upcoming-events">
+        <section id="upcoming-events">
 
-            <!-- FORENSIC ENTOMOLOGY EVENT -->
-            <article id="featured-event" class="event-card-wrapper grid-item">
+            <div id="upcoming-events-wrapper">
 
-                <div class="event-card">
+                <h1>Upcoming Events</h1>
 
-                    <figure>
+                <!-- FORENSIC ENTOMOLOGY EVENT -->
+                <article id="featured-event" class="event-card-wrapper grid-item">
 
-                        <img src="images/fly.jpg" alt="Close up image of a fly">
+                    <div class="event-card">
 
-                    </figure>
+                        <figure>
+
+                            <img src="images/fly.jpg" alt="Close up image of a fly">
+
+                        </figure>
+
+                        <time datetime="2026-09-15T15:30">September 15, 2026 at 3:30 PM</time>
+                        <p class="event-meta">Scientific Talks | Sullivan Science 101</p>
 
 
-                    <div class="event-text">
-                        <h2><a href="event.html" id="header-link">Lady of the Flies: The Importance of Forensic
-                                Entomology with Dr. Melinda Thomas</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Libero, officia aliquid. Ea delectus harum provident?
-                            Quia nobis et eaque deleniti molestias cum? Ut esse labore hic, unde aut alias expedita!
-                            <a href="event.html" class="read-links">Read more...</a>
-                        </p>
+                        <div class="event-text">
+                            <h2 id="featured-heading">
+                                <a href="event.html" id="header-link">
+                                    Lady of the Flies: The Importance of Forensic Entomology with Dr. Melinda Thomas
+                                </a>
+                            </h2>
+                            <p>
+                                What can insects reveal about crime? 
+                                Explore the facinating world of forensic entomology, where science and investigation meet, with one of our university's leading entomological experts.
+                                <a href="event.html" class="read-links">Learn more...</a>
+                            </p>
+                        </div>
+
                     </div>
 
-                </div>
+                </article>
 
-            </article>
+                <!-- ORCHESTRAL PERFORMANCE EVENT -->
+                <article class="grid-item event-card-wrapper unfeatured-event">
 
-            <!-- ORCHESTRAL PERFORMANCE EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
+                    <div class="event-card">
 
-                <div class="event-card">
+                        <figure>
 
-                    <figure>
+                            <img src="images/orchestra.jpg" alt="A man conducting a symphonic orchestra">
 
-                        <img src="images/orchestra.jpg" alt="A woman conducting a symphonic orchestra">
+                        </figure>
 
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Orchestral Performance</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-                </div>
-
-            </article>
-
-            <!-- BASKETBALL GAME EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/basketball.jpeg"
-                            alt="Two basketball players on opposing teams, the Sentinels player with the ball">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Barton State Bears at SupU Sentinels</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
-                    </div>
-                </div>
-
-            </article>
-
-            <!-- GROUP HIKE EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
-
-                <div class="event-card">
-
-                    <figure>
-
-                        <img src="images/hike.jpg" alt="A landscape of a forest around a lake in autumn">
-
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Lake Insignificant Nature Appreciation Hike</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
+                        <div class="event-text">
+                            <h2><a href="event.html">Orchestral Performance</a></h2>
+                            <time datetime="2026-10-03T19:00">October 3, 2026 at 7:00 PM</time>
+                            <p class="event-meta">Music | Auditorium</p>
+                            <p>
+                                Experience the power and beauty of live music at an upcoming orchestral performance featuring an unforgettable evening of symphonic artistry.
+                                <a href="event.html" class="read-links">View details...</a>
+                            </p>
+                        </div>
                     </div>
 
-                </div>
+                </article>
 
-            </article>
+                <!-- BASKETBALL GAME EVENT -->
+                <article class="grid-item event-card-wrapper unfeatured-event">
 
-            <!-- STUDENT SENATE MEETING EVENT -->
-            <article class="grid-item event-card-wrapper unfeatured-event">
+                    <div class="event-card">
 
-                <div class="event-card">
+                        <figure>
 
-                    <figure>
+                            <img src="images/basketball.jpg"
+                                alt="A female UNCG basketball player in action">
 
-                        <img src="images/senate.webp" alt="Students sitting around a table talking together">
+                        </figure>
 
-                    </figure>
-
-                    <div class="event-text">
-                        <h2><a href="#">Student Senate Meeting</a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <a href="#" class="read-links">Read more...</a>
-                        </p>
+                        <div class="event-text">
+                            <h2><a href="event.html">Carolina Tar Heels at UNCG Spartans</a></h2>
+                            <time datetime="2026-10-10T15:00">October 10, 2026 at 3:00 PM</time>
+                            <p class="event-meta">Athletics | Greensboro Coliseum</p>
+                            <p>
+                                Get ready for an exciting matchup as the Tar Heels face the Spartans in an NCAA game you will not want to miss.
+                                <a href="event.html" class="read-links">View details...</a>
+                            </p>
+                        </div>
                     </div>
 
-                </div>
+                </article>
 
-            </article>
+                <!-- GROUP HIKE EVENT -->
+                <article class="grid-item event-card-wrapper unfeatured-event">
+
+                    <div class="event-card">
+
+                        <figure>
+
+                            <img src="images/hike.jpg" alt="A waterfall running under a wooden bridge surrounded by nature">
+
+                        </figure>
+
+                        <div class="event-text">
+                            <h2><a href="event.html">Lakeside Nature Appreciation Hike</a></h2>
+                            <time datetime="2026-10-17T09:00">October 17, 2026 at 9:00 AM</time>
+                            <p class="event-meta">Outdoor Recreation | Lake Brandt</p>
+                            <p>
+                                Step into the season with us on a scenic group hike filled with fresh air, shared adventure, and unforgettable views.
+                                <a href="event.html" class="read-links">View details...</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- STUDENT SENATE MEETING EVENT -->
+                <article class="grid-item event-card-wrapper unfeatured-event">
+
+                    <div class="event-card">
+
+                        <figure>
+
+                            <img src="images/senate.jpg" alt="Two young female students wearing UNCG shirts smiling together">
+
+                        </figure>
+
+                        <div class="event-text">
+                            <h2><a href="event.html">Weekly Student Senate Meeting</a></h2>
+                            <time datetime="2026-10-21T17:00">October 21, 2026 at 5:00 PM</time>
+                            <p class="event-meta">Student Government | Student Center</p>
+                            <p>
+                                Stay informed and engaged as the Student Senate discusses key topics shaping campus life at its upcoming weekly meeting.
+                                <a href="event.html" class="read-links">View details...</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
-        <section class="about-section-wrapper">
+        <section id="about-section">
 
-            <div class="about-section">
+            <div id="about-section-content">
 
-                <div class="benefits-grid-container grid-item">
+                <div id="benefits-grid-container" class="grid-item">
 
-                    <!-- BENEFIT 1 -->
-                    <div class="benefit-card grid-item">
+                    <!-- SOCIAL MOBILITY -->
+                    <div id="benefit-card-social-mobility" class="grid-item">
 
-                        <h3>Benefit 1</h3>
+                        <h3>#1 in NC for Social Mobility</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Nesciunt harum error ipsum eos illum fuga perferendis.
+                            US News & World Report
                         </p>
 
                     </div>
 
-                    <!-- BENEFIT 2 -->
-                    <div class="benefit-card grid-item ">
+                    <!-- FREEDOM OF SPEECH -->
+                    <div id="benefit-card-free-speech" class="grid-item">
 
-                        <h3>Benefit 2</h3>
+                        <h3>#1 in NC for Free Speech</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Nesciunt harum error ipsum eos illum fuga perferendis.
+                            Foundation for Individual Rights & Expression
                         </p>
 
                     </div>
 
-                    <!-- BENEFIT 3 -->
-                    <div class="benefit-card grid-item ">
+                    <!-- ONLINE COLLEGES -->
+                    <div id="benefit-card-online-colleges" class="grid-item">
 
-                        <h3>Benefit 3</h3>
+                        <h3>#1 in NC for Best Online Colleges</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Nesciunt harum error ipsum eos illum fuga perferendis.
+                            University Magazine
                         </p>
 
                     </div>
 
                 </div>
 
-                <article class="about-card grid-item">
+                <article id="about-card" class="grid-item">
 
-                    <h2>About Superior University</h2>
+                    <h2>About UNCG</h2>
 
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Minima culpa aut explicabo nobis, eligendi accusamus corrupti vitae sed dolorum at fugit!
-                        Animi, ab officiis qui aliquid delectus iure deserunt accusamus!
+                        UNCG values inclusion, opportunity, collaboration, and academic excellence. 
+                        Its culture encourages students, faculty, and staff to learn from one another, engage with the community, and pursue meaningful goals in a welcoming and supportive environment. 
+                        Through diverse perspectives and a commitment to service, UNCG helps prepare students to make a positive impact on campus and beyond.
                     </p>
 
                 </article>
@@ -266,24 +293,24 @@
                     <p><span>Name: </span>Jane Doe</p>
                     <p><span>Email: </span>example@email.com</p>
                     <p><span>Phone: </span>555.444.3333</p>
-                    <p><span>Fax:</span>555.666.7777</p>
+                    <p><span>Fax: </span>555.666.7777</p>
 
                 </div>
-                
+
             </div>
 
             <div class="grid-item copyright-card">
 
-                &copy;Superior University 2026
+                &copy; UNCG 2026
 
             </div>
 
             <div class="grid-item navbar-card">
 
                 <ul class="footer-nav nav-links">
-                    <li><a href="#hero-section">Back to Top</a></li>
-                    <li><a href="#upcoming-events">Upcoming Events</a></li>
-                    <li><a href="#about-section">About</a></li>
+                    <li><a href="index.html">Back to Top</a></li>
+                    <li><a href="index.html#upcoming-events">Upcoming Events</a></li>
+                    <li><a href="index.html#about-section">About</a></li>
                     <li><a href="event.html">Featured Event</a></li>
                 </ul>
 
