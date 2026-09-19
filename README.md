@@ -29,9 +29,26 @@ This responsive Campus Event Guide helps UNCG students discover campus activitie
 
 ## Sources
 
-- Event and campus content was written for this assignment, with UNCG news pages used as editorial references: [UNCG Connections at the N.C. Folk Festival](https://www.uncg.edu/news/uncg-connections-at-n-c-folk-festival/) and [What's New at the G](https://www.uncg.edu/news/whats-new-at-the-g-2026/).
-- Images and SVG assets are stored locally in `images/`. Their original licensing or attribution should be recorded here before public release if any asset came from an external source.
-- Local fonts: Sofia Pro Regular, Sofia Pro Bold, and Pluto Sans Heavy OTF files in `fonts/`.
+## Sources
+
+- Content and design references:
+    - UNCG, "University of North Carolina at Greensboro," https://www.uncg.edu.
+    - UNCG News, “What's New at the G,” https://www.uncg.edu/news/whats-new-at-the-g-2026/.
+    - UNCG News, “UNCG Connections at the N.C. Folk Festival,” https://www.uncg.edu/news/uncg-connections-at-n-c-folk-festival/.
+- Images and SVG assets are stored locally in `images/`.
+- Image citations:
+    - Terminex Blog, "How Are Insects Used in Forensic Entomology?," https://www.terminix.com/-/media/Feature/Terminix/Articles/fly-forensic-entomology-main.jpg?rev=3dcf154d955a4364a2fa9577c7c142a1.
+    - UNCG Event, "Symphony Orchestra | College of Visual and Performing Arts," https://search.uncg.edu/?q=orchestra.
+    - UNCG Article, "Nadine Soliman: A Spartan Journey," https://www.uncg.edu/uncategorized/nadine-soliman-spartan-journey/.
+    - UNCG News, "Kind! Courageous! Bold! Vote for Spiro!," https://www.uncg.edu/campus-life/kind-courageous-bold-vote-for-spiro/.
+    - UNCG News, "Spartan Summer Excursions: Escape in Nature," https://www.uncg.edu/news/spartan-summer-excursions-escape-in-nature/.
+    - UNCG Student Government Association, "About," https://cap.uncg.edu/student-government-association-sga/about/.
+    - UNCG logo and visual identity materials used for educational purposes in accordance with this assignment.
+- Typography is stored locally as OTF files in `fonts/`.
+- Font citations:
+    - Sofia Pro Regular
+    - Sofia Pro Bold
+    - Pluto Sans Heavy
 
 ## Testing
 
